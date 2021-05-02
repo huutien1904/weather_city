@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./moment.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main_section">
+        <div class="search_bar">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            name="search-city"
+            id="seach-input"
+            placeholder="Tìm kiếm thành phố"
+          />
+          <div class="layer"></div>
+        </div>
+        <div class="show_weather">
+          <p class="namecity">Thành phố Hồ Chí Minh</p>
+          <p class="weather-state">mây thưa</p>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+            class="weather-icon"
+          />
+          <p class="temperature">26</p>
+        </div>
+      </div>
+
+      <div class="additional_section">
+        <div class="row">
+          <div class="item">
+            <div class="lable">MT Mọc</div>
+            <div class="value sunrise">6:16</div>
+          </div>
+          <div class="item">
+            <div class="lable">Độ ẩm</div>
+            <div class="value humidity">10%</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item">
+            <div class="lable">MT Nặn</div>
+            <div class="value sundown">17:57</div>
+          </div>
+          <div class="item">
+            <div class="lable">Dios</div>
+            <div class="value"><span class="dios">5.54</span> km/h</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
